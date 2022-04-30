@@ -1,0 +1,104 @@
+body {
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+  background-position: right -200px bottom -200px, left -200px top -200px;
+  background-repeat: no-repeat;
+  background-size: contain, contain;
+  color: hsl(229, 23%, 23%);
+  display: flex;
+  flex-direction: column;
+  font-family: Kumbh sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.5;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  width: 350px;
+}
+
+.card-image-pattern {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image-profile {
+  border: 5px solid #fff;
+  border-radius: 100%;
+  margin-top: -53px;
+}
+
+.card-details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.card-details-name {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.card-details-age, .card-details-location {
+  color: hsl(227, 10%, 46%);
+}
+
+.card-details-location {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.card-stats {
+  box-sizing: border-box;
+  border-top: 1px solid #dedede;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.card-stats span {
+  color: hsl(0, 0%, 59%);
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-around;
+  letter-spacing: .1rem;
+}
+
+footer {
+  bottom: 0;
+  padding-bottom: 10px;
+  position: fixed;
+}
+
+.attribution {
+  display: flex;
+  font-size: 13px;
+  text-align: center;
+}
+
+attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-position: right -150px bottom -250px, left -150px top -250px;
+    background-size: 50%;
+  }
+}
